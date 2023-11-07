@@ -31,10 +31,10 @@ function Cart() {
             <h4>Cart shopping <span className="text-danger">({totalUniqueItems})</span></h4>
             {items.map((item) => (
               <Col md='12 p-4 mb-2 bg-white' key={item.id} className="cart-left">
-                <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex justify-content-between align-items-center box">
                   <div>
                     <img src={item.image} alt="" />
-                    <p className="text-dark">{item.name}</p>
+                    <p className="text-dark mt-2">{item.name}</p>
                     <p className="text-dark">{item.price} $</p>
                   </div>
 
@@ -53,7 +53,7 @@ function Cart() {
                     </button>
                   </div>
                 </div>
-                <button className="btn btn-danger" onClick={() => removeItem(item.id)}>remove item</button>
+                <button className="btn btn-danger remove" onClick={() => removeItem(item.id)}>remove item</button>
               </Col>
             ))}
           </Col>
@@ -84,7 +84,7 @@ function CartPage() {
     <CartProvider>
       <NavBar />
       <div className="pt-5"></div>
-      <div className="pt-5"></div>
+      <div className="pt-4"></div>
       <Cart />
     </CartProvider>
   );

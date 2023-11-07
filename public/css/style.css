@@ -406,4 +406,21 @@ footer {
 .cart-right .cart-btn {
     text-decoration: none;
 }
+@media (max-width:992px) {
+    .cart {
+        text-align: center;
+    }
+    .cart .box {
+        flex-direction: column;
+    }
+    .cart .remove {
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+    }
+    .cart-right {
+        margin-top: 10px;
+        height: auto;
+    }
+}
 /* End cart  */
