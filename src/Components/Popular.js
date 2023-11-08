@@ -33,7 +33,7 @@ function Page() {
 
     return (
         <div>
-            <Container className='pt-5 popular'>
+            <Container className='pt-5 all-products'>
                 <Row>
                     <Col md='12 mb-4'>
                         <h2 className='text-dark'>Our <span className='text-danger'>Popular</span> Products</h2>

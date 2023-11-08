@@ -5,7 +5,6 @@ import App from "./App";
 import Contact from "./Components/Pages/Contact";
 import About from "./Components/Pages/About";
 import Products from "./Components/Pages/Products";
-import OurShops from "./Components/Pages/OurShops";
 import CartPage from "./Components/Pages/CartPage";
 import New from "./Components/New";
 
@@ -27,14 +26,10 @@ const router = createBrowserRouter([
         element: <Products />
     },
     {
-        path: "/shops",
-        element: <OurShops />
-    },
-    {
         path: "/cart",
         element: <CartPage />
     },
-<Route path='/New/:id' element={<New/>} />
+    <Route path='/New/:id' element={<New />} />
 ]);
 
 createRoot(document.getElementById("root")).render(

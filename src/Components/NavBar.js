@@ -5,10 +5,10 @@ function NavBar() {
   const { totalItems } = useCart();
   return (
     <CartProvider>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container wow fadeInUp">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-mdb-toggle="collapse"
             data-mdb-target="#navbarSupportedContent"
@@ -16,41 +16,41 @@ function NavBar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fas fa-bars"></i>
+            <i className="fas fa-bars"></i>
           </button>
 
-          <Link class="brand mt-2 mt-lg-0 d-flex" to="/">
+          <Link className="brand mt-2 mt-lg-0 d-flex  wow fadeInUp" to="/">
             <img
               src="images/logo.jpg" alt="Logo" loading="lazy" />
             <h1>nike shoes</h1>
           </Link>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <Link class="nav-link active" to="/">home</Link>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link active" to="/">home</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/products">products</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to="/products">products</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/about">about</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">about</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/contact">contact us</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">contact us</Link>
               </li>
 
             </ul>
-            <ul className='navbar-nav ml-auto mb-2 mb-lg-0 align-items-center'>
-              <li class="nav-item">
-                <Link class="nav-link" to="/contact">
+            <ul className='navbar-nav ml-auto mb-2 mb-lg-0 align-items-center wow fadeInUp'>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
                   <button className='btn btn-danger fw-bold'>
                     sign in
                   </button></Link>
               </li>
 
-              <li class="nav-item">
-                <Link class="nav-link position-relative" to="/cart">
-                  <i class="fas fa-cart-plus mx-2 fa-xl"></i>
+              <li className="nav-item">
+                <Link className="nav-link position-relative" to="/cart">
+                  <i className="fas fa-cart-plus mx-2 fa-xl"></i>
                   <span className='position-absolute'>{totalItems}</span>
                 </Link>
               </li>
