@@ -5,7 +5,7 @@ import { Input } from 'reactstrap'
 const Suscribe = () => {
     return (
         <div>
-            <Container className='bg-light my-5 p-5 text-dark'>
+            <Container className='bg-light my-5 p-5 text-dark suscribe'>
                 <Row>
                     <Col md='6 wow fadeInUp'>
                         <h2>Subscribe Our Newsletter</h2>

@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import ScrollToTop from "react-scroll-to-top";
 import { useEffect } from "react";
+import Footer from "../Footer";
 
 function Cart() {
   const { cartTotal, emptyCart, isEmpty, totalUniqueItems, items, updateItemQuantity, removeItem } = useCart();
@@ -66,7 +67,7 @@ function Cart() {
 
             <div className="d-flex justify-content-between">
               <h6>Subtotal</h6>
-              <h6 style={{ color: "#af1919" }}>Total Price ( {cartTotal} $)</h6>
+              <h6 style={{ color: "#af1919" }} >Total Price ( {cartTotal} $)</h6>
             </div>
             <hr className="text-muted" />
             <Link className="cart-btn" to='/contact'>
@@ -92,6 +93,7 @@ function CartPage() {
       <div className="pt-5"></div>
       <div className="pt-4"></div>
       <Cart />
+      <Footer />
       <ScrollToTop
         smooth
         viewBox="0 0 48 48"
@@ -99,7 +101,7 @@ function CartPage() {
         "
         color='#ff6452'
         style={{ backgroundColor: '#fff', width: '60px' }}
-        className='animate__animated animate__flash animate__infinite	infinite animate__slower'
+        className='animate__animated animate__flash animate__infinite	infinite animate__slower '
       />
     </CartProvider>
   );

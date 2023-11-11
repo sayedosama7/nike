@@ -7,6 +7,7 @@ import About from "./Components/Pages/About";
 import Products from "./Components/Pages/Products";
 import CartPage from "./Components/Pages/CartPage";
 import New from "./Components/New";
+import SignSuccess from "./Components/Pages/SignSuccess";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
     {
         path: "/cart",
         element: <CartPage />
+    },
+    {
+        path: "/sign-success",
+        element: <SignSuccess />
     },
     <Route path='/New/:id' element={<New />} />
 ]);

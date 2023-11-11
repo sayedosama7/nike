@@ -53,6 +53,14 @@ Link {
     --transition: all .5s ease;
 }
 
+/* scroll to top  */
+@media (max-width:576px) {
+    .scroll-to-top {
+        right: 10px !important;
+        bottom: 20px !important;
+    }
+}
+
 /* End global  */
 /* start navbar */
 .navbar {
@@ -108,7 +116,7 @@ Link {
     padding: 5px;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     .navbar .brand img {
         display: none;
     }
@@ -207,8 +215,10 @@ Link {
 
 @media (max-width:576px) {
     .all-products {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+
     }
 
     .all-products .box img {
@@ -218,6 +228,15 @@ Link {
     .all-products .box {
         border-top-left-radius: 20%;
         padding-top: 20px;
+    }
+
+    .all-products h2 {
+        font-size: 30px;
+    }
+
+    .all-products p {
+        padding: 5px 0;
+        line-height: 1.5;
     }
 }
 
@@ -251,13 +270,20 @@ Link {
     .swiper-none {
         display: none;
     }
+
+    .carousel {
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .carousel button {
+        width: fit-content !important;
+    }
 }
 
 /* End carousel  */
 
 /* start new  */
-
-
 .new .name {
     height: 50px;
     overflow: hidden;
@@ -290,6 +316,16 @@ Link {
 .new .new-card:hover {
     background: linear-gradient(to right, #aaccd537, #aaccd542);
     transform: scale(1.1);
+}
+
+@media (max-width:576px) {
+    .new h2 {
+        margin-bottom: 20px !important;
+    }
+
+    .new {
+        padding: 20px !important;
+    }
 }
 
 /* End new  */
@@ -336,13 +372,21 @@ Link {
     .sale .box-left div {
         margin: 20px 0 !important;
     }
+
+    .sale h2 {
+        margin-top: 10px !important;
+    }
+
+    .sale {
+        margin-top: 20px !important;
+    }
 }
 
 /* End sale  */
 /* start testimonials  */
 .testimonials {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .testimonials img {
@@ -357,6 +401,13 @@ Link {
     letter-spacing: 1px;
     height: 50px;
     overflow: hidden;
+}
+
+@media (max-width:576px) {
+    .testimonials {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 /* End testimonials  */
@@ -432,7 +483,7 @@ footer {
     text-decoration: none;
 }
 
-@media (max-width:992px) {
+@media (max-width:768px) {
     .cart {
         text-align: center;
     }
@@ -451,7 +502,28 @@ footer {
         margin-top: 10px;
         height: auto;
     }
+
+    .cart img {
+        margin-right: 0px;
+    }
+
 }
+
+@media (max-width:992px) {
+    .cart-right button {
+        font-size: 16px;
+    }
+
+    .cart-right {
+        height: 280px;
+    }
+
+    .cart {
+        padding: 20px auto;
+        border-radius: 10px;
+    }
+}
+
 
 /* End cart  */
 /* start about  */
@@ -461,7 +533,7 @@ footer {
     background-size: cover;
     background-position: bottom;
     padding: 30px;
-    padding-top: 10%;
+    padding-top: 7%;
 }
 
 .about h5 {
@@ -470,11 +542,22 @@ footer {
     color: #fff;
 }
 
+@media (max-width:576px) {
+    .about {
+        height: auto;
+    }
+
+    .about h5 {
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+}
+
 /* End about  */
 /* start contact  */
 .contact {
     background: linear-gradient(to right, #9ce5ff13, #9ce5ff2a), url(../images/nike4.jpg);
-    height: 550px;
+    height: 600px;
     background-size: cover;
     background-position: center;
 }
@@ -496,9 +579,26 @@ footer {
     .contact form {
         width: 100%;
     }
+
+    .contact h2 {
+        margin: 20px !important;
+    }
+
+    .contact {
+        height: auto;
+    }
 }
 
 /* End contact  */
+
+/* start sign-success  */
+.sign-success {
+    background: linear-gradient(to right, #000000bd, #9ce5ff6e), url(../images/sign-success.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+/* End sign-success  */
 
 /* start products  */
 .products img {
@@ -581,3 +681,30 @@ footer {
 }
 
 /* End detail  */
+@media(min-width:992px) and (max-width:1200px) {
+    .popular-name {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:576px) {
+    .popular-btn {
+        width: fit-content !important;
+        padding: 5px 10px !important;
+
+    }
+
+    .suscribe form {
+        flex-direction: column;
+    }
+
+    .suscribe form button {
+        margin-top: 10px !important;
+    }
+
+    .suscribe {
+        margin-top: 10px !important;
+        margin-bottom: 0px !important;
+    }
+}

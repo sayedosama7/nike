@@ -14,12 +14,11 @@ const Contact = () => {
     <CartProvider>
       <NavBar />
       <div className='pt-5'></div>
-      <div className='pt-4'></div>
-      <Container fluid className='contact'>
+      <Container fluid className='contact pt-4'>
         <Row>
           <Col>
             <h2 className="text-danger text-center my-5 wow fadeInUp" data-wow-delay=".2s">nike shoes</h2>
-            <Form>
+            <Form action='/sign-success'>
 
               <Form.Group className="mb-3 wow fadeInUp" data-wow-delay=".4s" controlId="formBasicName">
                 <Form.Label>your full name</Form.Label>

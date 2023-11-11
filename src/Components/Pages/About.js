@@ -14,8 +14,7 @@ const About = () => {
     <CartProvider>
       <NavBar />
       <div className='pt-5'></div>
-      <div className='pt-4'></div>
-      <Container fluid>
+      <Container fluid className='pt-4'>
         <Row>
           <Col md='12' className="text-center about">
             <h2 className="text-danger mb-5 h1 wow fadeInUp">nike shoes</h2>

@@ -90,7 +90,7 @@ const Page = () => {
                 <h2 className='text-dark mb-5 fw-bold'><span className='text-danger'>new</span> arrival</h2>
                 <Row>
                     {products.map((item) => (
-                        <Col md="3">
+                        <Col md="6" lg='3'>
                             <Card className='new-card mb-3  wow fadeInUp'>
                                 <Card.Img className='img-fluid m-auto pt-3' src={item.image} />
                                 <Card.Body>
@@ -98,7 +98,7 @@ const Page = () => {
                                     <div className='new-btn'>
                                         <Link onClick={() => detailPage(item)}><Button className='btn btn-danger more'>more details</Button></Link>
                                         <Link onClick={() => addItem(item)} >
-                                            <i className='fas fa-cart-plus ml-3 text-danger fa-xl'></i>
+                                            <i className='fas fa-cart-plus ml-3 text-danger fa-xl '></i>
                                         </Link>
                                     </div>
 
