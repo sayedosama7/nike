@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -12,7 +13,7 @@ const Header = () => {
                         <p className='text-danger'>Our Summer collections</p>
                         <h2 className='text-dark'>The New Arrival <br/> <span className='text-danger'>Nike</span> Shoes</h2>
                         <p className='py-3 text-dark'>Discover stylish Nike arrivals, quality comfort, and innovation for your active life.</p>
-                        <button className='btn btn-danger fw-bold btn-lg'>shop now</button>
+                       <Link to='/products'><button className='btn btn-danger fw-bold btn-lg'>shop now</button></Link> 
                     </Col>
 
                     <Col md='6 wow fadeInUp'data-wow-delay=".4s">

@@ -33,14 +33,14 @@ function Page() {
 
     return (
         <div>
-            <Container className='pt-5 popular'>
+            <Container className='pt-5 all-products'>
                 <Row>
                     <Col md='12 mb-4'>
                         <h2 className='text-dark'>Our <span className='text-danger'>Popular</span> Products</h2>
                         <p className='text-muted'>Experience top-notch quality and style with our sought-after <br /> selections. Discover a world of comfort, design, and value </p>
                     </Col>
                     {products.map((item) => (
-                        <Col md='3' className='text-center'>
+                        <Col md='6' lg='3' className='text-center'>
 
                             <Card className='box wow fadeInUp' data-wow-delay=".2s">
                                 <div className='wow fadeInUp' data-wow-delay=".4s">
@@ -49,7 +49,7 @@ function Page() {
                                 <hr style={{height:"3px"}} className='m-0 text-info'/>
                                 <CardBody className='bg-white'>
 
-                                    <CardTitle className='text-danger bg-white fw-bold' tag="h5">
+                                    <CardTitle className='text-danger bg-white fw-bold popular-name' tag="h5">
                                         {item.name}
                                     </CardTitle>
 
@@ -63,7 +63,7 @@ function Page() {
 
                                     </CardSubtitle>
 
-                                    <button onClick={() => addItem(item)} className='btn btn-danger px-5 mt-2 fw-bold'>add to cart</button>
+                                    <button onClick={() => addItem(item)} className='btn btn-danger px-5 mt-2 fw-bold popular-btn'>add to cart</button>
 
                                 </CardBody>
 
